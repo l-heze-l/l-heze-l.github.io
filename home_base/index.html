@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!-- Framework -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" 
+          rel="stylesheet">
+    <link href="styles/style.css" 
+          rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Headers -->
+    <h1>Home Base</h1>
+    <h2>Lukas Hezel</h2>
+
+    <!-- Boar Stuff -->
+    <img src="images/exploding-boar-boarsplosion.png" alt="Cartoon Boar Mind Blown Image" />
+    <button class="boar">Activate Boar?</button>
+    
+    <!-- Page Description -->
+    <p>This page a page that is a home base page that does what it can do to base a home!</p>
+    <p>My Projects: </p>
+
+    <!-- Collapsing Tabs -->
+    <div class="tab-container">
+
+        <!-- Sample Project Tab -->
+        <div class="tab">
+          <button class="tab-button">Sample Project</button>
+          <div class="tab-content">  
+            <p> This is a brief description of the project as well as some useful links:</p>
+            <ul>
+                <a href="https://github.com/l-heze-l"> My Github Page</a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Base Tab -->
+        <div class="tab">
+          <button class="tab-button">Home Base</button>
+          <div class="tab-content">
+            <p> Um... This is awkward... </p>
+          </div>
+        </div>
+    </div>
+    
+    <!-- New Project Modal -->
+    <button class="modal-button" id="open-modal">
+        Add New Project
+    </button>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Project Name:</h2>
+            <input type="text" id="project-name" placeholder="Enter project name">
+            <h2>Project Description:</h2>
+            <input type="text" id="project-desc" placeholder="Enter project description">
+            <h2>Link:</h2>
+            <input type="text" id="link-title" placeholder="Enter Link Title">
+            <input type="text" id="link-url" placeholder="Enter link URL">
+            <button id="add-project">Add Project</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>version 1.1 | 10/06/23</footer>
+
+    <!-- JS Reference -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
