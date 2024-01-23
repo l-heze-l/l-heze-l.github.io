@@ -3,104 +3,164 @@
 html {
     font-size: 20px; 
     font-family: 'Gothic A1', sans-serif;
-    background-color: #dcd9e6;
+    background-color: #141414;
 }
 body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 0 20px 0 20px;
-}
-  
-/*******************************************************************/
-/* Headers */
-h1 {
-    color: rgb(68, 28, 225);
-    margin: 0;
-    padding: 10px 0 0 0;
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 3px 3px 1px black;
-}
-h2 {
-    color: rgb(68, 28, 225);
-    margin: 0 0 0 0;
-    padding: 0 0;
-    font-size: 20px;
-    text-align: center;
-}
+    width: 85vw;
+    background-color: #141414;
+} 
 
 /*******************************************************************/
-/* Boar Stuff */
-img {
-    display: block;
-    margin: 10px auto;
-}
-.boar {
-    display: block;
-    margin: 0 auto;
-    color:#ffffff;
-    background-color: #ff0800;
-    border: 2px solid #000000;
-}
-
-/*******************************************************************/
-/* Collapsing Tabs */
-.tab-button{
-    display: block;
-    width: 600px;
-    margin: 20px auto 0 auto;
-    font-size: 20px;
-    background-color: #dcd9e6;
-    padding: 10px;
-    border: 2px solid #00000000;
-}
-.tab-content {
-    display: none;
-    width: 596px;
-    border: 2px solid #dcd9e6;
-    font-size: 15px;
-}
-
-/*******************************************************************/
-/* New Project Modal */
-.modal-button{
-    display: block;
-    margin: 20px auto 0 auto;
-    font-size: 20px;
-    background-color: #dcd9e6;
-    padding: 10px;
-    border: 2px solid #00000000;
-}
-.modal {
-    display: none; 
+/* Header */
+header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    background-color: #833dbd;
+    z-index: 100;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto; 
-    padding: 20px;
-    width: 70%;
-    max-width: 400px;
-    border-radius: 8px;
-    position: relative;
+h1 {
+    width: 50vw;
+    color: #ffffff;
+    font-size: 3vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    text-align: center;
 }
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
+
+/*******************************************************************/
+/* Main */
+main {
+    position: fixed;
+    top: 10vh;
+    left: 10vw; 
+    width: 90vw;
+    height: 90vh; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background-color: #141414;
+} 
+
+/*******************************************************************/
+/* Welcome Section */
+section.welcome {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../images/sploosh.jpg"); 
+    background-size: cover;
+    background-position: center;
 }
+h2.welcome {
+    color: #ffffff;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 7vw;
+    margin-top: 0;
+
+}
+p.welcome {
+    color: #ffffff;
+    padding-top: 10vh;
+    padding-bottom: 7.5vh;
+    padding-left: 30vw;
+    padding-right: 15vw;
+    font-size: 2.5vw;
+}
+
+/*******************************************************************/
+/* Info Section */
+section.info {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    background-color: #141414;
+}
+h2.info {
+    color: #ffffff;
+    margin-top: 0;
+}
+p.info {
+    color: #ffffff;
+}
+
+/*******************************************************************/
+/* Project Section */
+section.projects {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    background-color: #686868;
+}
+h2.projects {
+    color: #ffffff;
+    margin-top: 0;
+}
+p.projects {
+    color: #ffffff;
+}
+
+/*******************************************************************/
+/* Contact Section */
+section.contact {
+    display: block;
+    width: 100vw;
+    height: 90.5vh;
+    background-color: #141414;
+}
+h2.contact {
+    color: #ffffff;
+    margin-top: 0;
+}
+p.contact {
+    color: #ffffff;
+}
+
+/*******************************************************************/
+/* Sidebar */
+aside {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 10vw;
+    height: 90vh;
+    background-color: #141414;
+}
+div.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
+    background-color: #833dbd;
   
+}
+a.button {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.85vw; 
+    letter-spacing: 0.05em; 
+    text-decoration: none;
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+}
+a.button:hover {
+    background-color: #6a2c9e; 
+}
 /*******************************************************************/
 /* Footer */
 footer {
+    position: fixed;
+    bottom: 1vh;
+    left: 0;
+    width: 10vw;
     background-color: #ffffff00;
     color: #c7c4d1;
     font-size: 10px;
