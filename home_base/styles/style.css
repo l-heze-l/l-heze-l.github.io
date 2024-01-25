@@ -17,7 +17,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: #833dbd;
+    background-color: #502574;
     z-index: 100;
     height: 10vh;
     display: flex;
@@ -79,15 +79,42 @@ p.welcome {
 section.info {
     display: block;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: #141414;
 }
 h2.info {
     color: #ffffff;
+    margin: 0;
+    padding-left: 15vw;
+    padding-top: 3vh;
+    font-size: 2.5vw;
+}
+div.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 0;
+}
+div.image {
+    padding-right: 5vw;
+}
+img.selfie {
+    height: 70vh;
+    box-shadow: -1vw 1vw 0px 0px #502574;
 }
 p.info {
     color: #ffffff;
+    width: 30vw;
+    padding-left: 5vw;
+    padding-right: 12vw;
+    font-size: 1.5vw;
+}
+a.resume {
+    color: #8940c5;
+    text-decoration: none;
+}
+a.resume:hover {
+    color: #502574; 
 }
 
 /*******************************************************************/
@@ -139,7 +166,7 @@ div.button {
     width: 8vw;
     height: 8vw;
     margin: 1vw;
-    background-color: #833dbd;
+    background-color: #502574;
   
 }
 a.button {
@@ -152,7 +179,7 @@ a.button {
     padding-bottom: 1.8vw;
 }
 a.button:hover {
-    background-color: #6a2c9e; 
+    background-color: #8940c5; 
 }
 /*******************************************************************/
 /* Footer */
