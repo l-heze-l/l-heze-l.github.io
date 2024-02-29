@@ -1,3 +1,9 @@
+<!------------------------------------------------------------------------
+<-  Lukas Hezel
+<-  02/27/24
+<-  Home-Base HTML Code 
+<------------------------------------------------------------------------>
+
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -67,9 +73,11 @@
       <section id="Projects" class="projects">
         <h2 class="projects"> Projects </h2>
         <div class="projectrow">
-          <div class="projectslot" id="homebase"></div>
-          <div class="projectslot" id="empty1">
-            <p>nothing yet</p>
+          <div class="projectslot" id="homebase" onclick="showPopup('homebasePU')">
+            <p>My Portfolio <br> Webpage</p>
+          </div>
+          <div class="projectslot" id="luma" onclick="showPopup('lumaPU')">
+            <p>LUMA</p>
           </div>
         </div>
         <div class="projectrow">
@@ -81,6 +89,65 @@
           </div>
         </div>
       </section>
+
+      <!-- Project Pop-ups -->
+      <div id="homebasePU" class="popup">
+        <div class="PUBack" onclick="hidePopup('homebasePU')">
+          <p class="PUBack">Back</p>
+        </div>
+        <article class="PU-Body">
+          <h2 class="PU-head">
+            My Portfolio Webpage
+          </h2>
+          <p class="PU-text">
+            You're looking at it!!! <br><br><br>
+            This is a personal project I have been using to both learn the bare 
+            basics of webpage development and to keep track of the projects I 
+            take on. <br><br> My main source for learning has been
+            <a class="PU-link" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Mozilla's tutorial</a>
+            for introductory web development. <br><br> This tutorial helped me through
+            the HTML, CSS, and JS required to produce the webpage you see now. <br><br>
+            There are many aspects of the webpage that I already know can be
+            improved, and I am sure there are plenty more that I am unaware of,
+            but as for right now, I think I am done with it. <br><br> I may touch it up 
+            and update it as I see fit, but I am overall satisfied with my 
+            current journey through web development. <br><br> I can make it look somewhat
+            good for all of my use-cases, and that is good enough for me :)!
+            <br><br><br>
+            Anyways, feel free to check out the code and version history on my
+            <a class="PU-link" href="https://github.com/l-heze-l/home-base">Github Page</a>.
+          </p>  
+        </article>
+      </div>
+
+      <div id="lumaPU" class="popup">
+        <div class="PUBack" onclick="hidePopup('lumaPU')">
+          <p class="PUBack">Back</p>
+        </div>
+        <article class="PU-Body">
+          <h2 class="PU-head">
+            My Portfolio Webpage
+          </h2>
+          <p class="PU-text">
+            You're looking at it!!! <br><br><br>
+            This is a personal project I have been using to both learn the bare 
+            basics of webpage development and to keep track of the projects I 
+            take on. <br><br> My main source for learning has been
+            <a class="PU-link" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Mozilla's tutorial</a>
+            for introductory web development. <br><br> This tutorial helped me through
+            the HTML, CSS, and JS required to produce the webpage you see now. <br><br>
+            There are many aspects of the webpage that I already know can be
+            improved, and I am sure there are plenty more that I am unaware of,
+            but as for right now, I think I am done with it. <br><br> I may touch it up 
+            and update it as I see fit, but I am overall satisfied with my 
+            current journey through web development. <br><br> I can make it look somewhat
+            good for all of my use-cases, and that is good enough for me :)!
+            <br><br><br>
+            Anyways, feel free to check out the code and version history on my
+            <a class="PU-link" href="https://github.com/l-heze-l/home-base">Github Page</a>.
+          </p>  
+        </article>
+      </div>
 
       <!-- Contact Info -->
       <section id="Contact Me" class="contact">
@@ -121,7 +188,7 @@
     </main>
 
     <!-- Sidebar -->
-    <aside>
+    <aside id="sidebar">
       <div class="button">
         <a class="button" href="index.html#Welcome">Top of Page</a>
       </div>
@@ -134,17 +201,17 @@
       <div class="button">
         <a class="button" href="index.html#Contact Me">Contact Me</a>
       </div>
+
+      <!-- Footer -->
+      <footer>
+        version 2.03 <br>
+        02/28/24
+        <br>
+      </footer>
     </aside>
 
-    <!-- Footer -->
-    <footer>
-      version 2.2 <br>
-      01/25/24
-      <br>
-    </footer>
-
     <!-- JS Reference -->
-    <!-- script src="scripts/main.js"></script> -->
+    <script src="scripts/main.js"></script>
     
 </body>
 </html>
