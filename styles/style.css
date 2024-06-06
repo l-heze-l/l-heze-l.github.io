@@ -5,7 +5,7 @@
 /*******************************************************************/
 /* Base Framework */
 html {
-    font-size: 20px; 
+    font-size: .8vw; 
     font-family: 'Gothic A1', sans-serif;
     background-color: #141414;
 }
@@ -21,18 +21,15 @@ header {
     left: 0;
     width: 100vw;
     background-color: #502574;
-    z-index: 100;
     height: 10vh;
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 h1 {
-    width: 50vw;
     color: #ffffff;
-    font-size: 3vw;
-    padding-left: 25vw;
-    padding-right: 25vw;
-    text-align: center;
+    font-size: 3rem;
 }
 
 /*******************************************************************/
@@ -50,29 +47,50 @@ main {
 
 /*******************************************************************/
 /* Welcome Section */
-section.welcome {
-    display: block;
-    width: auto;
-    height: 90vh;
-    background-image: url("../images/sploosh.jpg"); 
-    background-size: cover;
-    background-position: center;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; 
+    background-color: #502574; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
 }
-h2.welcome {
-    color: #ffffff;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    padding-left: 15vw;
-    font-size: 7vw;
-    margin-top: 0;
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid #ffffff; /* Change this to your desired color */
+    border-width: 0 7px 7px 0;
+    padding: 3px;
+    margin-bottom: -7px;
 }
-p.welcome {
-    color: #ffffff;
-    padding-top: 10vh;
-    padding-bottom: 7.5vh;
-    padding-left: 30vw;
-    padding-right: 15vw;
-    font-size: 2.5vw;
+.carousel-control-prev-icon::after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 4px; 
+}
+.carousel-control-next-icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: -4px; 
+}
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    z-index: 2; 
+    text-align: center;
+    pointer-events: none; 
+}
+.carousel-overlay h2{
+    text-shadow: 2px 2px 4px #8940c5;
 }
 
 /*******************************************************************/
@@ -188,7 +206,7 @@ div#more.projectslot {
 
 /*******************************************************************/
 /* Project Pop-ups */
-div.popup {
+.popup {
     display: none;
     position: fixed;
     top: 10vh;
@@ -196,7 +214,7 @@ div.popup {
     width: 100vw;
     height: 90vh; 
 }
-article.PU-Body {
+.PU-Body {
     display: block;
     position: fixed;
     top: 10vh;
@@ -208,24 +226,30 @@ article.PU-Body {
     background-color: #141414;
     color: #ffffff;
 }
-h2.PU-head {
+.PU-head {
     font-size: 2.5vw;
     text-align: center;
+    margin-bottom: 0 ;
 }
-p.PU-text {
+.PU-text {
     padding-left: 2vw;
     padding-right: 2vw;
 }
-a.PU-link {
+.PU-link {
     color: #0059ff;
 }
-a.PU-link:hover {
+.PU-link:hover {
     color: #023faf;
 }
-div#homebasePU {
+.PU-img {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+#homebasePU {
     background-color: #5f4077;
 }
-div#lumaPU {
+#lumaPU {
     background-color: #096c99;
 }
 div.PUBack {
@@ -248,7 +272,7 @@ p.PUBack {
     text-decoration: none;
 }
 div.PUBack:hover {
-    background-color: #0000003b
+    background-color: #00000018
 }
 /*******************************************************************/
 /* Contact Section */
