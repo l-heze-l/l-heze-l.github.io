@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
   
-<head>
+  <head>
     <!-- Framework -->
     <title>Lukas Hezel Portfolio</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="charset=UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
 
     <!-- CSS References-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
-    </style>
-</head>
+  </head>
 
   <body>
-    <!-- Header -->
-    <header>
+    <header> <!-- Header -->
       <h1>Lukas Hezel Portfolio</h1>
     </header>
 
-    <!-- Main -->
-    <main>
+    <main class="container">  <!-- Main -->
+
       <!-- Welcome Section -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/TwoMonth_bg/TwoMonth_bg1.JPG" class="d-block w-100" alt="First Slide">
@@ -63,16 +62,19 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <section class="carousel-overlay">
+      <section id="carousel-overlay" class="container">
         <h2 id="welcome"> Welcome! </h2>
         <p id="greeting">
-          Welcome to my portfolio webpage! <br>
-          I hope you are having a good day :)
+          I hope you are having a wonderful day!<br>
+          These background images were taken by<br>
+          a high-altitude ballooning project I<br>
+          made with the UAH Space Hardware Club.<br>
+          [ with a very cheap camera ;) ]
         </p>
       </section>
 
       <!-- Info Section -->
-      <section id="Info" class="info">
+      <section id="Info" class="info container">
         <h2 class="info"> About Me </h2>
         <div class="aboutme">
           <div class="image">
@@ -89,18 +91,15 @@
             a constant source of inspiration for me.
             <br><br>
             Curious to know more? Feel free to explore
-            <a class="resume" href="./documents/Lukas_Hezel_Resume.pdf" target="_blank">
-              my resume
-            </a> 
+            <a class="resume" href="./documents/Lukas_Hezel_Resume.pdf" target="_blank">my resume</a> 
             and discover the intersection of my academic journey and 
             personal interests.
           </p>
         </div>
-        
       </section>
 
       <!-- Projects Section -->
-      <section id="Projects" class="projects">
+      <section id="Projects" class="projects container">
         <h2 class="projects"> Projects </h2>
         <div class="projectrow">
           <div class="projectslot" id="homebase" onclick="showPopup(homebasePU)">
@@ -173,56 +172,32 @@
             I am the electrical sub-team lead of the project, putting a lot of the circuitry
             and power design into my responsibility. <br><br>
           </p>  
-        
-      </section></div>
+        </section>
+    </div>
 
       <!-- Contact Info -->
-      <section id="Contact Me" class="contact">
+      <section id="Contact Me" class="contact container">
         <h2 class="contact"> Contact Me </h2>
         <div class="externallink">
-          <a class="externallink" id="email" href="mailto:luke.hezel@gmail.com">
-            Email: luke.hezel@gmail.com
-          </a>
+          <a class="externallink" id="email" href="mailto:luke.hezel@gmail.com">Email: luke.hezel@gmail.com</a>
         </div>
         <div class="externallink">
-          <a class="externallink" id="linkedin" href="https://www.linkedin.com/in/luke-hezel-83545628a/">
-            LinkedIn: Luke Hezel
-          </a>
+          <a class="externallink" id="linkedin" href="https://www.linkedin.com/in/luke-hezel-83545628a/">LinkedIn: Luke Hezel</a>
         </div>
         <div class="externallink">
-          <a class="externallink" id="github" href="https://github.com/l-heze-l">
-            GitHub: l-heze-l
-          </a>
+          <a class="externallink" id="github" href="https://github.com/l-heze-l">GitHub: l-heze-l</a>
         </div>
         <div class="externallink">
-          <a class="externallink" id="handshake" href="https://uah.joinhandshake.com/stu/users/44172223">
-            Handshake: Lukas Hezel
-          </a>
+        <a class="externallink" id="handshake" href="https://uah.joinhandshake.com/stu/users/44172223">Handshake: Lukas Hezel</a>
         </div>
       </section>
     </main>
 
-    <!-- Sidebar -->
-    <aside id="sidebar" style="display: block;">
-      <div class="button">
-        <a class="button" href="file://wsl.localhost/Ubuntu/home/handfishheze/l-heze-l.github.io/index.html#Welcome">Top of Page</a>
-      </div>
-      <div class="button">
-        <a class="button" href="file://wsl.localhost/Ubuntu/home/handfishheze/l-heze-l.github.io/index.html#Info">About Me</a>
-      </div>  
-      <div class="button">
-        <a class="button" href="file://wsl.localhost/Ubuntu/home/handfishheze/l-heze-l.github.io/index.html#Projects">My Projects</a>
-      </div>  
-      <div class="button">
-        <a class="button" href="file://wsl.localhost/Ubuntu/home/handfishheze/l-heze-l.github.io/index.html#Contact%20Me">Contact Me</a>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-        version 2.04 <br>
-        05/13/24 <br>
-      </footer>
-    </aside>
+    <!-- Footer -->
+    <footer>
+      version 2.04 <br>
+      05/13/24 <br>
+    </footer>
 
     <!-- JS References -->
     <script src="./scripts/main.js"></script>
@@ -231,5 +206,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 
-</body>
+  </body>
 </html>
