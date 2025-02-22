@@ -4,7 +4,6 @@
 /*  Home-Base CSS Code
 /*******************************************************************/
 /* Base Framework */
-
 html {
   font-size: .8vw; 
   font-family: 'Gothic A1', sans-serif;
@@ -82,7 +81,6 @@ h2 {
 
 /*******************************************************************/
 /* Info Section */
-
 div.aboutme {
   display: flex;
   align-items: center;
@@ -112,7 +110,6 @@ a.resume:hover {
 
 /*******************************************************************/
 /* Project Section */
-
 div.projectrow {
   display: flex;
   align-items: center;
@@ -223,9 +220,9 @@ p.PUBack {
 div.PUBack:hover {
   background-color: #00000018
 }
+
 /*******************************************************************/
 /* Contact Section */
-
 div.externallink {
   display: flex;
   border-radius: 2%;
@@ -266,9 +263,9 @@ a#handshake.externallink {
 a#handshake.externallink:hover {
   background-color: #2b4215; 
 }
+
 /*******************************************************************/
 /* Footer */
-
 footer {
   display: block;
   background-color: #ffffff00;
